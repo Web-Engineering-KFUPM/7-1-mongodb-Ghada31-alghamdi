@@ -169,12 +169,16 @@
 
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb+srv://s202269300_db_user:<tRGxgTfL83ZUAoA0>@cluster0.ijxaywf.mongodb.net/")
+mongoose.connect("mongodb+srv://s202269300_db_user:tRGxgTfL83ZUAoA0@cluster0.ijxaywf.mongodb.net/")
 
 
 // define schema
-
-
+const studentSchema = new mongoose.Schema({
+         name: String,
+         age: Number,
+         major: String
+      });
+      const Student = mongoose.model("Student", studentSchema);
 // create document
 
 
