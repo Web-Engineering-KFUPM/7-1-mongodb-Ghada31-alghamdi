@@ -169,7 +169,7 @@
 
 import mongoose from "mongoose";
 
-// establish connection
+mongoose.connect("mongodb+srv://s202269300_db_user:<tRGxgTfL83ZUAoA0>@cluster0.ijxaywf.mongodb.net/")
 
 
 // define schema
